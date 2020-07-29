@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Mugilan-Codes/hackernews-node/issues"
   },
-  "homepage": "https://github.com/Mugilan-Codes/hackernews-node#readme"
+  "homepage": "https://github.com/Mugilan-Codes/hackernews-node#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
 }
