@@ -12,7 +12,6 @@ let idCount = links.length;
 const resolvers = {
   Query: {
     info: () => `This is the API of Hackernews Clone`,
-    // info: () => null,
     feed: () => links,
     link: (parent, args) => links.find((link) => link.id === args.id),
   },
@@ -32,6 +31,12 @@ const resolvers = {
       if (args.description) {
         link.description = args.description;
       }
+      return link;
+    },
+    deleteLink: (parent, args) => {
+      const index = links.findIndex((link) => link.id === args.id);
+      const link = links[index];
+      links.splice(index, 1);
       return link;
     },
   },
