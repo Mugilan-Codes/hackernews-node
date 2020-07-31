@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Mugilan-Codes/hackernews-node#readme",
   "dependencies": {
     "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.3.0"
   }
 }
